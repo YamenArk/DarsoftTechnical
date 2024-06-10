@@ -33,17 +33,29 @@ $ npm install
 ```
 
 ## Running the app
-
-```bash
-# development
-$ npm run start
+first of all 
+go to the src/app.module.ts
+and change the valuse for synchronize,dropSchema to true 
+and then on the trminal 
+$ npm run start:dev
+now database crated and tables are ready 
+and rechange the valuse for synchronize,dropSchema to false
+and rerun the project with $ npm run start:dev
+Note:
+1.you have all Apis in postman  
+2.plz created one user and go to database and change isAdmin for him to true
+3.to run any (admins apis or create news api) you have to enter a token for a admin to run it 
+4.for socket io to work :
+Open Postman and go to the WebSocket tab.
+Create a New WebSocket Request.
+Use http://localhost:3000/?id=2 and enter Listeners
+latestNews,newsAdded
+5.for the news part ,I only did created news part but update,delete i did not have enought time to do them
+ 
 
 # watch mode
 $ npm run start:dev
 
-# production mode
-$ npm run start:prod
-```
 
 ## Test
 

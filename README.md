@@ -51,7 +51,7 @@ Create a New WebSocket Request.
 Use http://localhost:3000/?id=2 and enter Listeners
 latestNews,newsAdded
 5.for the news part ,I only did created news part but update,delete i did not have enought time to do them
- 
+6.the Token type is Bearer Token
 
 # watch mode
 $ npm run start:dev
